@@ -268,8 +268,8 @@ def main(argv):
     plt.show()
 
     # Save the trained models
-    torch.save(discriminator, 'digit_gan_D_model.pth')
-    torch.save(generator, 'digit_gan_G_model.pth')
+    torch.save(discriminator, 'digit_c_gan_D_model.pth')
+    torch.save(generator, 'digit_c_gan_G_model.pth')
 
     return
 
