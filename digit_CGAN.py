@@ -158,7 +158,7 @@ def train_loop(dataloader, G, D, loss, G_optimizer, D_optimizer, G_loss, D_loss,
         generated_data = G(noise, fake_labels).to(device) #batch_size x 784
 
         true_data = data.view(batch_size, -1).to(device) #batch_size x 784
-        digit_labels = target # batch_size
+        digit_labels = target.to(device) # batch_size
         true_labels = torch.ones(batch_size).to(device)
         
         # Clear optimizer gradients
