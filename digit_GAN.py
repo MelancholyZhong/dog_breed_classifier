@@ -29,7 +29,7 @@ def loadData():
 
 #Helper function that plots the first 6 images from the MNIST digits
 def showExamples(training_data):
-    size = len(training_data)
+    size = 10
     figure=plt.figure(figsize=(8,6)) #8x6 inches window
     cols, rows = 3, (size+2)//3
     for i in range(cols*rows):
@@ -220,7 +220,7 @@ def main(argv):
     
     #load traing data
     data = loadData()
-    # Uncomment to show the first six images.
+    # Uncomment to show the first 10 images.
     # showExamples(data)
 
     # create dataloaders
